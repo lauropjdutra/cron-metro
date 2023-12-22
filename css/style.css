@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 95vh;
+  background: radial-gradient(#333233, #262626);
+}
+
+.title {
+  color: #989aec;
+  font-size: 3rem;
+}
+
+.main-box {
+  display: flex;
+  gap: 0.4rem;
+}
+
+#milliseconds {
+  font-size: 1.3rem;
+  color: #a9a9a9;
+  text-align: center;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cbc7f1;
+  font-size: 5rem;
+  width: 8rem;
+}
+
+.separator {
+  color: #a9a9a9;
+  font-size: 4.5rem;
+  font-weight: 300;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.625rem 1.25rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #cccccc;
+  background: none;
+  border: 1px solid #cbc7f1;
+  border-radius: 1.875rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+#start,
+#resume {
+  background: #7374c5;
+  border: none;
+  color: #ffffff;
+}
+
+#pause {
+  background: #e93838;
+  border: none;
+  color: #ffffff;
+}
+
+#pause,
+#resume {
+  display: none;
+}
+
+footer {
+  padding: 1.625rem;
+  background: #cbc7f1;
+  color: #262626;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #5859af;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #7374c5;
+}
+
+a:active {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 500px) {
+  .title {
+    font-size: 2.2rem;
+  }
+  .time {
+    width: 5rem;
+    font-size: 3.5rem;
+  }
+
+  .separator {
+    font-size: 3rem;
+  }
+
+  #milliseconds {
+    font-size: 1rem;
+  }
+}

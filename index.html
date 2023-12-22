@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+    <title>Cronômetro</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title" title="Cronômetro">Cronômetro</h1>
+      <div class="timer">
+        <div class="main-box">
+          <h2 class="time" id="hours" title="Horas">00</h2>
+          <h2 class="separator">:</h2>
+          <h2 class="time" id="minutes" title="Minutos">00</h2>
+          <h2 class="separator">:</h2>
+          <h2 class="time" id="seconds" title="Segundos">00</h2>
+        </div>
+        <div class="milliseconds-box">
+          <h3 id="milliseconds" title="Milisegundos">000</h3>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn" id="start" title="Iniciar contagem">Iniciar</button>
+        <button class="btn" id="pause" title="Pausar contagem">Pausar</button>
+        <button class="btn" id="resume" title="Continuar contagem">Continuar</button>
+        <button class="btn" id="reset" title="Reiniciar o cronômetro">Resetar</button>
+      </div>
+    </main>
+    <footer>
+      <h4>Copyright &copy; 2023 - Desenvolvido por <b><a href="https://www.linkedin.com/in/lauropjdutra" target="_blank" title="Lauro Dutra | LinkedIn">Lauro Dutra</a></b></h4>
+    </footer>
+  </body>
+</html>
