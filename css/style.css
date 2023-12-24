@@ -7,28 +7,41 @@
   font-family: "Sora", sans-serif;
 }
 
+body {
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(#333233, #262626);
+}
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  height: 95vh;
-  background: radial-gradient(#333233, #262626);
+  height: 95%;
 }
 
 .title {
-  color: #989aec;
+  color: #8789e2;
   font-size: 3rem;
 }
 
 .main-box {
   display: flex;
-  gap: 0.4rem;
+  gap: 0.2rem;
 }
 
-#milliseconds {
-  font-size: 1.3rem;
+.milliseconds-box {
+  width: 4.3rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.2rem;
+  padding-bottom: 1rem;
+}
+
+#milliseconds, .dot {
+  font-size: 1.7rem;
   color: #a9a9a9;
   text-align: center;
 }
@@ -37,14 +50,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #cbc7f1;
+  color: #dad6fa;
   font-size: 5rem;
   width: 8rem;
 }
 
 .separator {
   color: #a9a9a9;
-  font-size: 4.5rem;
+  font-size: 4.3rem;
   font-weight: 300;
 }
 
@@ -59,7 +72,7 @@
   font-weight: 600;
   color: #cccccc;
   background: none;
-  border: 1px solid #cbc7f1;
+  border: 1px solid #cccccc;
   border-radius: 1.875rem;
   cursor: pointer;
   transition: all 0.1s ease-in;
@@ -89,17 +102,21 @@
 
 footer {
   padding: 1.625rem;
-  background: #cbc7f1;
-  color: #262626;
   width: 100%;
   position: absolute;
   bottom: 0;
   text-align: center;
 }
 
+h4 {
+  color: #cbc7f1;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
 a {
   text-decoration: none;
-  color: #5859af;
+  color: #8789e2;
 }
 
 a:hover {
@@ -115,16 +132,21 @@ a:active {
   .title {
     font-size: 2.2rem;
   }
+
   .time {
-    width: 5rem;
-    font-size: 3.5rem;
+    width: 5.3rem;
+    font-size: 4rem;
   }
 
   .separator {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
-  #milliseconds {
+  .milliseconds-box {
+    width: 2.7rem;
+  }
+  
+  #milliseconds, .dot {
     font-size: 1rem;
   }
 }
